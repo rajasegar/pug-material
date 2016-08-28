@@ -1,0 +1,25 @@
+{
+  "name": "pug-material",
+  "version": "1.0.0",
+  "description": "Material design components written using Pug mixins",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajasegar/pug-material.git"
+  },
+  "keywords": [
+    "pug",
+    "material",
+    "design",
+    "components"
+  ],
+  "author": "Rajasegar Chandran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rajasegar/pug-material/issues"
+  },
+  "homepage": "https://github.com/rajasegar/pug-material#readme"
+}

@@ -1,0 +1,28 @@
+//- material.pug
+//- Material design mixins
+  
+//- Including buttons
+include components/buttons
+  
+//- Including breadcrumbs
+include components/breadcrumbs
+  
+//- Including cards
+include components/cards
+
+doctype html
+html(lang="en")
+        head
+            link(href="https://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")
+            //- Import materialize.css
+            link(type="text/css", rel="stylesheet", href="materialize/css/materialize.min.css")
+            //- Let browser know website is optimized for mobile
+            meta(name="viewport", content="width=device-width, initial-scale=1.0")
+            title Pug Material
+        body
+                block body
+
+                block scripts
+                    //- import jQuery before materialize.js
+                    script(src="js/jquery-2.1.1.min.js")
+                    script(src="materialize/js/materialize.min.js")

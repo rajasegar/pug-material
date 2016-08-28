@@ -1,0 +1,50 @@
+//- cards
+
+mixin card()
+  .row
+    .col.s12.m6
+      .card.blue-grey.darken-1
+        .card-content.white-text
+          span.card-title Card Title
+          p I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.
+        .card-action
+          a(href="#") Link 1
+          a(href="#") Link 2
+ 
+mixin image-card()
+  .card
+    .card-image
+      img(src="images/marketing1.jpg")
+      span.card-title Card Title
+    .card-content
+      p
+        I am a very simple card. I am good at containing small bits of info
+    .card-action
+      a(href="#") This is a link
+
+mixin horizontal-card()
+  .card.horizontal
+    .card-image
+      img(src="images/marketing2.jpg")
+    .card-stacked
+      .card-content
+        p
+          I am a very simple card.
+      .card-action
+        a(href="#") This is a link
+
+mixin card-reveal()
+  .card
+    .card-image.waves-effect.waves-block.waves-light
+      img.activator(src="images/marketing3.jpg")
+    .card-content
+      span.card-title.activator.grey-text.text-darken4
+        | Card title
+        i.material-icons.right more_vert
+      p
+        a(href="#") This is a link
+    .card-reveal
+      span.card-title.grey-text.text-darken-4
+        | Card title
+        i.material-icons.right close
+      p Here is some info about the product

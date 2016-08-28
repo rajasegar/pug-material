@@ -1,0 +1,27 @@
+//- Button mixins
+
+mixin a-btn(url,style)
+  - var className = (style === undefined) ? "btn" : "btn-" + style
+  a.waves-effect.waves-light(class=className,href=url)
+    block
+
+mixin a-btn-large(url)
+  +a-btn(url,"large")
+    block
+  
+mixin a-floating-btn(url)
+  a.btn-floating.btn-large.waves-effect.waves.light.red(href=url)
+    block
+  
+mixin fab(style)
+  - var className = (style === undefined) ? "" : style
+  .fixed-action-btn(class=className, style="bottom:135px; right: 24px")
+    a.btn-floating.btn-large.red
+      i.large.material-icons mode_edit
+    ul
+      li
+        a.btn-floating.red
+          i.material-icons insert_chart
+
+mixin fab-horizontal()
+  +fab("horizontal")
