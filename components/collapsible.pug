@@ -1,0 +1,21 @@
+//- collapsible
+mixin collapsible-accordion
+  ul.collapsible(data-collapsible="accordion")
+    block
+
+
+mixin collapsible-popout
+  ul.collapsible.popout(data-collapsible="accordion")
+    block
+
+mixin collapsible
+  ul.collapsible(data-collapsible="expandable")
+    block
+
+mixin collapsible-item(title,icon)
+  li
+    .collapsible-header
+      i.material-icons= icon 
+      = title
+    .collapsible-body
+      block

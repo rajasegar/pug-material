@@ -1,0 +1,5 @@
+//- dropdowns
+mixin dropdown(title,id)
+  a.dropdown-button.btn(href="#", data-activates='dropdown1')= title
+  ul.dropdown-content(id=id)
+    block

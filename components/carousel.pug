@@ -1,0 +1,12 @@
+//- carousel
+mixin carousel
+  .carousel
+    block
+
+mixin carousel-item(href,img)
+  a.carousel-item(href=href)
+    img(src=img)
+
+mixin carousel-slider
+  .carousel.carousel-slider
+    block
