@@ -1,6 +1,6 @@
 {
   "name": "pug-material",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Material design components written using Pug mixins",
   "main": "index.js",
   "scripts": {
